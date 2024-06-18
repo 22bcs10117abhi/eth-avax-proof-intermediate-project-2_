@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <div class="container">
+        <h1>Stock Portfolio</h1>
+        <button onclick="connect()">connect wallet</button>
+        <div id="stocksList"></div>
+        <div class="add-stock-form">
+            <input type="text" id="stockName" placeholder="Stock Name">
+            <input type="number" id="buyPrice" placeholder="Buy Price">
+            <input type="number" id="sellPrice" placeholder="Sell Price">
+            <button onclick="addStock()">Add Stock</button>
+        </div>
+        <button onclick="getUserStocksCount()">Get details</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

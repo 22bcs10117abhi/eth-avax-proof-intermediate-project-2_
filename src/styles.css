@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8efef;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-stock-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-stock-form input[type="text"],
+.add-stock-form button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.add-stock-form input[type="text"]:focus,
+.add-stock-form button:hover {
+    border-color: #007bff;
+    outline: none;
+}
+
+.add-stock-form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-stock-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .add-stock-form {
+        flex-direction: column;
+    }
+    .add-stock-form input[type="text"],
+    .add-stock-form button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
